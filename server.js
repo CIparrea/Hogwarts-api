@@ -15,7 +15,7 @@ app.use(logger("dev"))
 
 app.use("/api", routes)
 
-bd.on("connected",() => {
+db.on("connected",() => {
     console.clear();
     console.log(chalk.blue("Connected to MongoDB"));
 
